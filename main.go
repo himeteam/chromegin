@@ -55,5 +55,5 @@ func main() {
 	r.GET("version", func(context *gin.Context) {
 		context.JSON(200, gin.H{"BuildAt": BuildAt, "GitHash": GitHash})
 	})
-	log.Fatal(r.Run(":8888"))
+	log.Fatal(r.Run(":6666"))
 }
