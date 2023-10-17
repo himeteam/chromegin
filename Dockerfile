@@ -12,9 +12,9 @@ RUN yum install -y wget git&& \
 
 ENV GOPROXY=https://goproxy.io  PATH="${PATH}:/usr/local/go/bin"
 # 定义使用的Golang 版本
-ARG GO_VERSION=1.16
+ARG GO_VERSION=1.21.3
 
-# 安装 golang 1.6
+# 安装 golang 1.21.3
 RUN wget "https://dl.google.com/go/go$GO_VERSION.linux-amd64.tar.gz" && \
     rm -rf /usr/local/go && \
     tar -C /usr/local -xzf "go$GO_VERSION.linux-amd64.tar.gz" && \
